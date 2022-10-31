@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Hyperspace by HTML5 UP</title>
+    <title>Tech Gadgets</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -23,7 +23,7 @@
       <div class="inner">
         <nav>
           <ul>
-            <li><a href="#Main">Welcome</a></li>
+            <li><a href="#Intro">Welcome</a></li>
             <li><a href="#WhoWeAre">Who we are</a></li>
             <li><a href="#Products">Products</a></li>
             <li><a href="#three">Get in touch</a></li>
@@ -35,7 +35,7 @@
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Main -->
-      <section id="Main" class="wrapper style1 fullscreen fade-up">
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
           <h1>Tech Gadgets</h1>
           <p>
@@ -44,27 +44,26 @@
           </p>
           <ul class="actions">
             <li>
-              <a href="#one" class="button scrolly">Sign up for great deals</a>
+              <a href="#signUp" class="button scrolly">Get additional 5% off</a>
+              <!-- put  -->
+              <a href="#signUp" class="button scrolly">Continue to your deal</a>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- WhoWeAre -->
-      <section id="WhoWeAre" class="wrapper style2 spotlights">
+      <section class="wrapper style2 spotlights">
         <section>
-          <a href="#" class="image"
-            ><img src="images/pic01.jpg" alt="" data-position="center center"
-          /></a>
-          <div class="content">
+          <div id="signUp" class="content">
             <div class="inner">
               <h2>Sign UP</h2>
               <p>
-                When you sign up with us you join our mailing list and you will
-                get alerts when there are great discounts or coupon codes on
-                latest tech gadgets.
+                Sign up here and get an additional 5% off. The link will be sent
+                to your email. Further, you will have the chance to get
+                additional promotions and vouchers
               </p>
-              <form action="POST" method="./signUp">
+              <form action="post" method="/signUp">
                 <div class="fields">
                   <div class="field half">
                     <label for="email">Email</label>
@@ -72,16 +71,13 @@
                   </div>
                 </div>
                 <ul class="actions">
-                  <li><a href="generic.html" class="button">Submit</a></li>
+                  <li><button class="button" type="submit">Submit</button></li>
                 </ul>
               </form>
             </div>
           </div>
         </section>
         <section>
-          <a href="#" class="image"
-            ><img src="images/pic02.jpg" alt="" data-position="top center"
-          /></a>
           <div class="content">
             <div class="inner" id="Products">
               <h2>Products</h2>
@@ -125,10 +121,12 @@
                   <div class="field half">
                     <label for="phoneNumber">Phone Number (Optiona)</label>
                     <input type="text" name="phoneNumber id=" phoneNumber />
+                    <small></small>
                   </div>
                   <div class="field">
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="5"></textarea>
+                    <small></small>
                   </div>
                 </div>
                 <ul class="actions">
