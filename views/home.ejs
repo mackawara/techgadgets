@@ -100,18 +100,26 @@
                   <div class="field half">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" />
+                    <small>
+                        <% if (errors.name) { %>
+                         <%=errors.name.message%>
+                        <% } %>
+                    </small>
                   </div>
                   <div class="field half">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" />
+                    <small></small>
                   </div>
                   <div class="field half">
                     <label for="phoneNumber">Phone Number (Optiona)</label>
                     <input type="text" name="phoneNumber id=" phoneNumber />
+                    <small></small>
                   </div>
                   <div class="field">
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="5"></textarea>
+                    <small></small>
                   </div>
                 </div>
                 <ul class="actions">
@@ -157,22 +165,4 @@
       </section>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-      <div class="inner">
-        <ul class="menu">
-          <li>&copy; Tech Gadgets 2022. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  
+    <% include ("../partials/footer.ejs") %> 
